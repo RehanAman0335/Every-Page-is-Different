@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.row
+{
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box
+{
+    width: 40%;
+    height: 500px;
+    border: 2px solid blue;
+
+}
+
+select {
+    padding: 10px 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.productimg{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 10px auto;
+}
+.detail{
+    border: 2px solid black;
+    padding: 20px;
+    
+}

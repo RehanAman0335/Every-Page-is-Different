@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <select name="" id="product-1" onchange="Product1()">
+                    <option value="">Select Product</option>
+                    <option value="Iphone 7">Iphone 7</option>
+                    <option value="Iphone 8">Iphone 8</option>
+                    <option value="Iphone X">Iphone X</option>
+                </select>
+
+                <img src="" alt="" class="productimg" id="pro-img-1">
+
+                <div class="detail">
+                    <h3 class="product-title" id="pro-title-1"></h3>
+                    <p class="product-detail" id="pro-detail-1"></p>
+                    <p class="product-price" id="pro-price-1"></p>
+                </div>
+            </div>
+
+            <div class="box">
+                <select name="" id="product-2" onchange="Product2()">
+                    <option value="">Select Product</option>
+                    <option value="Iphone 7">Iphone 7</option>
+                    <option value="Iphone 8">Iphone 8</option>
+                    <option value="Iphone X">Iphone X</option>
+                </select>
+
+                <img src="" alt="" class="productimg" id="pro-img-2">
+
+                <div class="detail">
+                    <h3 class="product-title" id="pro-title-2"></h3>
+                    <p class="product-detail" id="pro-detail-2"></p>
+                    <p class="product-price" id="pro-price-2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function Product1()
+{
+    var product_name = document.getElementById("product-1").value;
+    var pro_img = document.getElementById("pro-img-1");
+    var pro_title = document.getElementById("pro-title-1").innerHTML;
+    var pro_detail = document.getElementById("pro-detail-1").innerHTML;
+    var pro_price = document.getElementById("pro-price-1").innerHTML;
+
+    if(product_name == "Iphone 7")
+    {
+        document.getElementById("pro-img-1").src="https://techprice.pk/wp-content/uploads/2023/01/Apple-IPhone-12-Mini-2.webp";
+        document.getElementById("pro-title-1").innerHTML="Iphone 7";
+        document.getElementById("pro-detail-1").innerHTML="RAM 4GB <br> ROM 32GB Camera 16Mp";
+        document.getElementById("pro-price-1").innerHTML="Rs. 25000";
+    }
+
+    else if(product_name == "Iphone 8")
+    {
+        document.getElementById("pro-img-1").src="https://techprice.pk/wp-content/uploads/2023/01/Apple-iPhone-11-Pro-2.webp";
+        document.getElementById("pro-title-1").innerHTML="Iphone 8";
+        document.getElementById("pro-detail-1").innerHTML="RAM 4GB <br> ROM 32GB Camera 16Mp";
+        document.getElementById("pro-price-1").innerHTML="Rs. 35000";
+    }
+
+    else if(product_name=="Iphone X")
+    {
+        document.getElementById("pro-img-1").src="https://mobimania.si/wp-content/uploads/2019/02/iphone-x-xs-300x300.jpg";
+        document.getElementById("pro-title-1").innerHTML="Iphone X";
+        document.getElementById("pro-detail-1").innerHTML="RAM 4GB <br> ROM 32GB Camera 16Mp";
+        document.getElementById("pro-price-1").innerHTML="Rs. 35000";
+    }
+
+    else
+    {
+       
+    }
+    
+}
+
+function Product2()
+{
+    var product_name = document.getElementById("product-2").value;
+    var pro_img = document.getElementById("pro-img-2");
+    var pro_title = document.getElementById("pro-title-2").innerHTML;
+    var pro_detail = document.getElementById("pro-detail-2").innerHTML;
+    var pro_price = document.getElementById("pro-price-2").innerHTML;
+
+    if(product_name == "Iphone 7")
+    {
+        document.getElementById("pro-img-2").src="https://techprice.pk/wp-content/uploads/2023/01/Apple-IPhone-12-Mini-2.webp";
+        document.getElementById("pro-title-2").innerHTML="Iphone 7";
+        document.getElementById("pro-detail-2").innerHTML="RAM 4GB <br> ROM 32GB Camera 16Mp";
+        document.getElementById("pro-price-2").innerHTML="Rs. 25000";
+    }
+
+    else if(product_name == "Iphone 8")
+    {
+        document.getElementById("pro-img-2").src="https://techprice.pk/wp-content/uploads/2023/01/Apple-iPhone-11-Pro-2.webp";
+        document.getElementById("pro-title-2").innerHTML="Iphone 8";
+        document.getElementById("pro-detail-2").innerHTML="RAM 4GB <br> ROM 32GB Camera 16Mp";
+        document.getElementById("pro-price-2").innerHTML="Rs. 35000";
+    }
+
+    else if(product_name=="Iphone X")
+    {
+        document.getElementById("pro-img-2").src="https://mobimania.si/wp-content/uploads/2019/02/iphone-x-xs-300x300.jpg";
+        document.getElementById("pro-title-2").innerHTML="Iphone X";
+        document.getElementById("pro-detail-2").innerHTML="RAM 4GB <br> ROM 32GB Camera 16Mp";
+        document.getElementById("pro-price-2").innerHTML="Rs. 35000";
+    }
+
+    else
+    {
+       
+    }
+    
+}
+    </script>
+</body>
+</html>

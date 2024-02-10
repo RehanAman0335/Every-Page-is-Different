@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container
+        {
+            border: 2px solid red;
+            padding: 20px;
+        }
+
+        .row
+        {
+            border: 2px solid  black;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            border: 2px solid blue;
+            width: 200px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+  
+
+
+    <div class="container">
+        <div class="row">
+            <form>
+                <hr>
+                <h1>Login Form</h1>
+                <label>Name: </label>
+                <input type="text" placeholder="enetr your name" id="name">
+                <label id="sname" style="color: red;"></label>
+<br><br>
+                <label>Password: </label>
+                <input type="password" placeholder="enetr your password" id="password">
+                <label id="spassword" style="color: red;"></label>
+                <br><br>
+                <input type="button" value="Submit" onclick="login()">
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+
+        function login()
+        {
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+
+            if(name == "ali")
+            {
+                document.getElementById("sname").style.display = "none";
+               if(password == "12345")
+               {
+                  alert("welcome");
+                  document.getElementById("spassword").style.display = "none";
+                  location.assign('contact.html');
+               }
+               else
+               {
+                // alert("not matching");
+
+                document.getElementById("spassword").innerHTML = "please enter your password";
+               }
+            }
+
+            else
+            {
+                document.getElementById("sname").innerHTML = "please enter your name";
+            }
+        }
+
+        
+        
+
+
+    </script>
+    
+</body>
+</html>
